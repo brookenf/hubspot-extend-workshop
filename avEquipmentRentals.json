@@ -1,0 +1,74 @@
+{
+    "name": "av_equipment_rentals",
+    "labels": {
+      "singular": "AV Equipment Rental",
+      "plural": "AV Equipment Rentals"
+    },
+    "primaryDisplayProperty": "name",
+    "secondaryDisplayProperties": [
+       "start_date",
+       "end_date"
+  ],
+    "requiredProperties": [
+       "name",
+       "start_date",
+       "end_date"
+    ],
+    "properties": [
+      {
+        "name": "start_date",
+        "label": "Start date",
+        "type": "date",
+        "fieldType": "date"
+      },
+      {
+        "name": "end_date",
+        "label": "End date",
+        "type": "date",
+        "fieldType": "date"
+      },
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "enumeration",
+        "fieldType": "select",
+        "options": [
+          {
+            "label": "MacBook Pro 14",
+            "value": "macbook_pro_14"
+          },
+          {
+            "label": "MacBook Pro 16",
+            "value": "macbook_pro_16"
+          },
+          {
+            "label": "Canon Rebel T7",
+            "value": "canon_rebel_t7"
+          },
+          {
+            "label": "Canon EOS R10",
+            "value": "canon_eos_r10"
+          },
+          {
+            "label": "PTZOptics 30X-NDI Camera",
+            "value": "ptzoptics_30x-ndi_camera"
+          },
+          {
+            "label": "PTZOptics 12X-SDI Camera",
+            "value": "ptzoptics_12x-sdi_camera"
+          }, 
+          {
+            "label": "Epson EX3280 Projector",
+            "value": "epson_ex3280_projector"
+          },
+          {
+            "label": "Epson Pro EX9240 Projector",
+            "value": "epson_pro_ex9240_projector"
+          }
+        ]
+      }
+    ],
+    "associatedObjects": [
+      "CONTACT"
+    ]
+  }

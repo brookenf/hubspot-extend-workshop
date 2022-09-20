@@ -1,0 +1,9 @@
+## Node Items
+node_modules
+
+## HubSpot Items
+hubspot.config.yml
+
+## System Files
+.DS_Store
+Thumbs.db
