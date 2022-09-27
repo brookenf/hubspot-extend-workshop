@@ -1,14 +1,10 @@
 doctype html
 html 
     head 
-        title= `${title}`
+        title="Title"
         meta(name="viewport" content="width=device-width, initial-scale=1")
-        link(rel="stylesheet", href="/css/styles.css")
-        link(rel="stylesheet", href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css")
-        script(src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js")
-        script(src="/calendar.js")
+        
     body    
-        h1 Calendar
-        p the calendar here
-        div#calendar
-
+        h1 Extend
+        #calendar(style={"height": "800px"})
+        script(src='/dist/calendar.min.js')

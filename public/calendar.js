@@ -1,4 +1,7 @@
-var Calendar = window.tui.Calendar;
+/* ES6 module in Node.js environment */
+import Calendar from '@toast-ui/calendar';
+import '@toast-ui/calendar/dist/toastui-calendar.min.css';
+import './css/style.css'
 
 const calendar = new Calendar('#calendar', {
     defaultView: 'week',
