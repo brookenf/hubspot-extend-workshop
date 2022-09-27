@@ -1,5 +1,6 @@
 ## Node Items
 node_modules
+package-lock.json
 
 ## HubSpot Items
 hubspot.config.yml
