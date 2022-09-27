@@ -1,10 +1,14 @@
 doctype html
 html 
     head 
-        title="Title"
+        title= `${title}`
         meta(name="viewport" content="width=device-width, initial-scale=1")
         
     body    
-        h1 Extend
-        #calendar(style={"height": "800px"})
-        script(src='/dist/calendar.min.js')
+        .container
+            h1 AV Rental Equipment
+            #calendar(style={"height": "800px"})
+            #form
+                p this is where the form will go
+                a(href='/get-data') Get Data
+            script(src='/dist/calendar.min.js')

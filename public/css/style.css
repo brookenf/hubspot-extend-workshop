@@ -1,4 +1,23 @@
-body {
+.container {
     font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header"
+        "cal form";
+    column-gap: 30px;
+}
+
+h1 {
+    grid-area: header;
+}
+
+#calendar {
+    grid-area: cal; 
+}
+
+#form {
+    grid-area: form;
 }
 
