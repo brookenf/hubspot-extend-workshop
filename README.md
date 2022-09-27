@@ -1,4 +1,4 @@
-# HubSpot.Extend() Workshop Day
+# HubSpot.Extend() Workshop: Adding CRM to your Skillset - Getting Started with HubSpot's Platform API
 
 Welcome to HubSpot.Extend()'s Workshop Day. Our workshop has three parts:
 1. Setting Up Your Dev Environment
@@ -17,11 +17,10 @@ Welcome to HubSpot.Extend()'s Workshop Day. Our workshop has three parts:
 -- a CSV file with demo custom object data
 -- a completed index.js file
 -- a package.json file
-3. Teach users how to run the HubSpot CLI commands to create the custom object in their accounts
-4. Teach users how to import the csv file into their accounts to create the demo data
+3. Teach you how to run the HubSpot CLI commands to create the custom object in their accounts
+4. Teach you how to import the csv file into their accounts to create the demo data
 
 **The third section will be leveraging the custom object in a hello world app**
-1. Make sure all users have npm installed `npm install -g npm`
-2. Teach users how to install node packages _they'll have the package.json file_ using `npm install`
-3. Have users install HubSpot npm client `npm i @hubspot/api-client`
-4. Teach users how to set up their node stuff
+1. Make sure all you have npm installed `npm install -g npm`
+2. Teach you how to install node packages using `npm install`
+4. Teach you how to set up your node app
