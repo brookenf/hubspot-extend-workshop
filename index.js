@@ -13,8 +13,9 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', async (req, res) => {
-    // Get all rental equipment data
-    const apiCall = 'https://api.hubapi.com/crm/v3/objects/{objectType}/?limit=10&archived=false';
+    res.render('index')
+    // // Get all rental equipment data
+    // const apiCall = 'https://api.hubapi.com/crm/v3/objects/{objectType}/?limit=10&archived=false';
     // const headers = {
     //     Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
     //     'Content-Type': 'application/json'
@@ -22,7 +23,7 @@ app.get('/', async (req, res) => {
     // try {
     //     const resp = await axios.get(apiCall, { headers });
     //     const data = resp.data.results;
-        res.render('index', { title: 'AV Rental Equipment | HubSpot APIs' });      
+        res.render('index', { title: 'AV Rental Equipment | HubSpot APIs', data });      
     // } 
     // catch (error) {
     //     console.error(error);
