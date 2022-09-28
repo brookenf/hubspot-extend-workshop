@@ -2,8 +2,10 @@ const express = require('express');
 const axios = require('axios');
 const bodyParser = require('body-parser');
 
-
 const app = express();
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 require('dotenv').config();
 // console.log(process.env);
@@ -17,6 +19,29 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', async (req, res) => {
     res.render('index', { title: 'AV Rental Equipment | HubSpot APIs' });
+});
+
+app.post('/', async (req, res) => {
+    const newEquipmentRental = {
+        properties: {
+            "name": req.body.chooseEquipment,
+            "start_date": req.body.chooseStartDate,
+            "end_date": req.body.chooseEndDate
+        }
+    }
+
+    const postNewRental = `https://api.hubapi.com/crm/v3/objects/2-8923644`;
+    const headers = {
+        Authorization: `Bearer ${process.env.PRIVATE_APP_ACCESS}`,
+        'Content-Type': 'application/json'
+    };
+
+    try { 
+        await axios.post(postNewRental, newEquipmentRental, { headers } );
+        res.redirect('back');
+    } catch(err) {
+        console.error(err);
+    }
 });
 
 app.get('/get-data', async (req, res) => {
