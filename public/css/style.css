@@ -9,7 +9,7 @@
     column-gap: 30px;
 }
 
-h1 {
+header {
     grid-area: header;
 }
 
@@ -19,5 +19,19 @@ h1 {
 
 .form {
     grid-area: form;
+}
+
+form#rentEquipment {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+#rentEquipment select, #rentEquipment input {
+    margin-bottom: 2em;
+}
+
+#chooseEquipment {
+    margin-right: 15px;
 }
 

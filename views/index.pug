@@ -8,9 +8,25 @@ html
         .container
             header 
                 h1 AV Rental Equipment
-            .calender
+            .calendar
+                h3 Equipment Availability
                 #calendar(style={"height": "800px"})
             .form
-                p this is where the form will go
-                a(href='/get-data') Get Data
-            script(src='/dist/calendar.min.js')
+                h3 Reserve Equipment
+                form(method="POST" id="rentEquipment")
+                    label(for="chooseEquipment" id="chooseEquipment") Equipment to Rent
+                    select(name="chooseEquipment" id="equipment" form="rentEquipment")
+                        option(value="macbook_pro_14") MacBook Pro 14
+                        option(value="macbook_pro_16") MacBook Pro 16
+                        option(value="canon_rebel_t7") Canon Rebel T7
+                        option(value="canon_eos_r10") Canon EOS R10
+                        option(value="ptzoptics_30x-ndi_camera") PTZOptics 30X-NDI Camera
+                        option(value="ptzoptics_12x-sdi_camera") PTZOptics 12X-SDI Camera
+                        option(value="epson_ex3280_projector") Espon EX3280 Projector
+                        option(value="epson_pro_ex9240_projector") Espon Pro EX9240 Projector
+                    label(for="chooseStartDate") Rental Period Start
+                    input(type="date" id="chooseStartDate" name="chooseStartDate")
+                    label(for="chooseEndDate") Rental Period End
+                    input(type="date" id="chooseEndDate" name="chooseEndDate")
+                    input(type="submit" value="Reserve Your Equipment")
+        script(src='/dist/calendar.min.js')
