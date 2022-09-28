@@ -7,8 +7,9 @@ html
     body    
         .container
             h1 AV Rental Equipment
-            #calendar(style={"height": "800px"})
-            #form
+            .calender
+                #calendar(style={"height": "800px"})
+            .form
                 p this is where the form will go
                 a(href='/get-data') Get Data
             script(src='/dist/calendar.min.js')

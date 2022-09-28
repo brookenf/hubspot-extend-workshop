@@ -13,11 +13,11 @@ h1 {
     grid-area: header;
 }
 
-#calendar {
+.calendar {
     grid-area: cal; 
 }
 
-#form {
+.form {
     grid-area: form;
 }
 
