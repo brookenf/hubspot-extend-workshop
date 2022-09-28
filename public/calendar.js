@@ -11,34 +11,39 @@ async function createCalendar() {
   try {
     const resp = await fetch(`http://localhost:3000/get-data`);
     const data = await resp.json();
-    console.log(data);  
+    const dataMap = data.map((rental) => {
+      return {
+        id: rental.id,
+        calendarId: rental.properties.name,
+        title: rental.properties.name,
+        category: 'allday',
+        dueDateClass: '',
+        start: rental.properties.start_date,
+        end: rental.properties.end_date,
+      }
+    });
+    console.log(dataMap);
+
+    const calendars = [];
+    dataMap.forEach(rental => {
+      const avCalendars = 
+        {
+          id: rental.calendarId,
+          name: rental.title,
+          backgroundColor: `#${Math.floor(Math.random()*16777215).toString(16)}`,
+        }
+      calendars.push(avCalendars);     
+    });
+
+    console.log(calendars);
     
     // Create Calendar instance
     const calendar = new Calendar('#calendar', {
       defaultView: 'month',
-      calendars: [
-        {
-          id: 'cal1',
-          name: 'AV Rental',
-          backgroundColor: '#03bd9e',
-        }
-      ],
+      calendars: calendars,
     });
 
-    calendar.createEvents(
-      // Create indiviaul events from /get-data
-      data.map((rental) => {
-        return {
-          id: rental.id,
-          calendarId: 'cal1',
-          title: rental.properties.name,
-          category: 'allday',
-          dueDateClass: '',
-          start: rental.properties.start_date,
-          end: rental.properties.end_date,
-        }
-      })
-    );
+    calendar.createEvents(dataMap);
   } 
   catch (error) {
       console.error(error);
