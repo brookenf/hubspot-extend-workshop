@@ -44,6 +44,8 @@ async function createCalendar() {
     });
 
     calendar.createEvents(dataMap);
+    const month = calendar.getDate();
+    document.getElementById('month-heading').innerHTML = `${new Date(month).toLocaleString('en-us',{month:'long', year:'numeric'})}`;
   } 
   catch (error) {
       console.error(error);
