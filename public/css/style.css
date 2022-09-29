@@ -15,11 +15,9 @@
 @media screen and (min-width: 900px) {
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
         grid-template-areas: 
             "header header"
             "cal form";
-        column-gap: 30px;
     }
 }
 
