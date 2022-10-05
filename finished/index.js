@@ -28,7 +28,7 @@ app.use(express.static(__dirname + '/public'));
  * * First, we'll create a route at the root (/) where our web app will appear.
  */
 app.get('/', async (req, res) => {
-    res.render('index', { title: 'AV Rental Equipment | HubSpot APIs' });
+    Ares.render('index', { title: 'AV Rental Equipment | HubSpot APIs' });
 });
 
 /**
