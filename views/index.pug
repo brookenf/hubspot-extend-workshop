@@ -4,7 +4,8 @@ html
         //- This is pulled over from index.js 
         title= `${title}`
         meta(name="viewport" content="width=device-width, initial-scale=1")
-        
+        //- Calendar CSS
+        link(rel="stylesheet" href='/dist/calendar.css')
     body    
         .container
             header 
@@ -21,6 +22,6 @@ html
                 p Reserve your equipment below! Equipment rentals are for 3 days.
                 //- Add form here
                 
-        //- Calling the minified script files
-        script(src='/dist/calendar.min.js')
+        //- Calling the script file
+        script(src='/dist/calendar.bundled.js')
         

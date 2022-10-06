@@ -4,7 +4,9 @@
   "description": "Welcome to HubSpot.Extend()'s Workshop Day. Our workshop has three parts: 1. Setting Up Your Dev Environment 2. Creating a Custom Object 3. Leveraging Your Custom Object in a web app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "nodemon ./start.js --ignore public/",
+    "start": "concurrently \"npm run watch\" \"npm run assets\"",
+    "assets": "webpack -w"
   },
   "author": "",
   "license": "ISC",
@@ -23,7 +25,9 @@
     "autoprefixer": "^10.4.11",
     "babel-loader": "^8.2.5",
     "babel-preset-env": "^1.7.0",
+    "concurrently": "^7.4.0",
     "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.1",
     "postcss": "^8.4.16",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.6",
