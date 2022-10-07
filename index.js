@@ -29,9 +29,7 @@ app.use(express.static(__dirname + '/public'));
  * * First, we'll create a route at the root (/) where our web app will appear.
  * TODO: Use app.get to call the route, render 'index' file of PUG, send title to index.pug file. 
  */
-app.get('/', (req, res) => {
-    res.render('index')
-})
+
 /**
  * * Next, we'll get the existing data from our custom object to show on our calendar. The data we're calling is from the CSV file we imported.
  * TODO: Get the custom object ID, then include that in the API endpoint we're sending. We'll use our private app token we made earlier for authorization. Then, we want to view our results in JSON at /get-data route.

@@ -1,7 +1,7 @@
 doctype html
 html 
     head
-        //- This is pulled over from index.js 
+        //- * This is pulled over from index.js 
         title= `${title}`
         meta(name="viewport" content="width=device-width, initial-scale=1")
         //- Calendar CSS
@@ -10,18 +10,18 @@ html
         .container
             header 
                 h1 AV Rental Equipment
-            //- One-half of the page (desktop) for calendar
+            //- * One-half of the page (desktop) for calendar
             .calendar
                 h3 Equipment Availability
                 h4(id="month-heading")
-                //- Instantiate Calendar here
+                //- TODO: Instantiate Calendar here
                 
-            //- One-half of the page (desktop) for form
+            //- * One-half of the page (desktop) for form
             .form
                 h3 Reserve Equipment
                 p Reserve your equipment below! Equipment rentals are for 3 days.
-                //- Add form here
+                //- TODO: Add form here
                 
-        //- Calling the script file
+        //- * Calling the script file
         script(src='/dist/calendar.bundled.js')
         
