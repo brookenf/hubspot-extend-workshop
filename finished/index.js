@@ -36,7 +36,7 @@ app.get('/', async (req, res) => {
  */
  app.get('/get-data', async (req, res) => {
     // Get all rental equipment data
-     const apiCall = 'https://api.hubapi.com/crm/v3/objects/2-8923644/?limit=25&archived=false&properties=name,start_date,end_date';
+     const apiCall = 'https://api.hubapi.com/crm/v3/objects/2-8923644/?limit=50&archived=false&properties=name,start_date,end_date';
      const headers = {
          Authorization: `Bearer ${process.env.PRIVATE_APP_ACCESS}`,
          'Content-Type': 'application/json'

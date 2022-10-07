@@ -1,0 +1,33 @@
+{
+    "name": "New AV Rentals",
+    "files": [
+        {
+            "fileName": "sample-rentals-2.csv",
+            "fileFormat": "CSV",
+            "dateFormat": "MONTH_DAY_YEAR",
+            "fileImportPage": {
+                "hasHeader": true,
+                "columnMappings": [
+                    {
+                        "columnObjectTypeId": "2-8923644",
+                        "columnName": "Name",
+                        "propertyName": "name",
+                        "idColumnType": null
+                    },
+                    {
+                        "columnObjectTypeId": "2-8923644",
+                        "columnName": "Start date",
+                        "propertyName": "start_date",
+                        "idColumnType": null
+                    },
+                    {
+                        "columnObjectTypeId": "2-8923644",
+                        "columnName": "End date",
+                        "propertyName": "end_date",
+                        "idColumnType": null
+                    }
+                ]
+            }
+        }
+    ]
+}
