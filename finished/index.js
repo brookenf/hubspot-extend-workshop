@@ -36,7 +36,7 @@ app.get('/', async (req, res) => {
  */
  app.get('/get-data', async (req, res) => {
     // Get all rental equipment data
-     const apiCall = 'https://api.hubapi.com/crm/v3/objects/2-8923644/?limit=50&archived=false&properties=name,start_date,end_date';
+     const apiCall = `https://api.hubapi.com/crm/v3/objects/${YOUR_CUSTOM_OBJECT_ID}/?limit=50&archived=false&properties=name,start_date,end_date`;
      const headers = {
          Authorization: `Bearer ${process.env.PRIVATE_APP_ACCESS}`,
          'Content-Type': 'application/json'
@@ -63,7 +63,7 @@ app.get('/', async (req, res) => {
         }
     }
 
-    const postNewRental = `https://api.hubapi.com/crm/v3/objects/2-8923644`;
+    const postNewRental = `https://api.hubapi.com/crm/v3/objects/${YOUR_CUSTOM_OBJECT_ID}`;
     const headers = {
         Authorization: `Bearer ${process.env.PRIVATE_APP_ACCESS}`,
         'Content-Type': 'application/json'

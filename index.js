@@ -35,6 +35,9 @@ app.use(express.static(__dirname + '/public'));
  * TODO: Get the custom object ID, then include that in the API endpoint we're sending. We'll use our private app token we made earlier for authorization. Then, we want to view our results in JSON at /get-data route.
  */
 
+// * This constant will be your custom object's id
+const YOUR_CUSTOM_OBJECT_ID = '';
+
 /**
  * * Now that we've built our form, it's time to send that data to our HubSpot account upon submit.
  * TODO: Use app.post to send form data to HubSpot, using the the POST API endpoint. Then, when the POST works, redirect to the page you're currently on to show updated calendar.

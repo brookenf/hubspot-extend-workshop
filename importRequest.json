@@ -4,24 +4,24 @@
         {
             "fileName": "sample-rentals-2.csv",
             "fileFormat": "CSV",
-            "dateFormat": "MONTH_DAY_YEAR",
+            "dateFormat": "YEAR_MONTH_DAY",
             "fileImportPage": {
                 "hasHeader": true,
                 "columnMappings": [
                     {
-                        "columnObjectTypeId": "2-8923644",
+                        "columnObjectTypeId": "YOUR_CUSTOM_OBJECT_ID",
                         "columnName": "Name",
                         "propertyName": "name",
                         "idColumnType": null
                     },
                     {
-                        "columnObjectTypeId": "2-8923644",
+                        "columnObjectTypeId": "YOUR_CUSTOM_OBJECT_ID",
                         "columnName": "Start date",
                         "propertyName": "start_date",
                         "idColumnType": null
                     },
                     {
-                        "columnObjectTypeId": "2-8923644",
+                        "columnObjectTypeId": "YOUR_CUSTOM_OBJECT_ID",
                         "columnName": "End date",
                         "propertyName": "end_date",
                         "idColumnType": null
