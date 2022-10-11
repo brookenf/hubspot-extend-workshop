@@ -34,7 +34,11 @@ app.get('/', async (req, res) => {
 /**
  * * Next, we'll get the existing data from our custom object to show on our calendar. The data we're calling is from the CSV file we imported.
  */
- app.get('/get-data', async (req, res) => {
+
+// * This constant will be your custom object's id
+const YOUR_CUSTOM_OBJECT_ID = '';
+
+app.get('/get-data', async (req, res) => {
     // Get all rental equipment data
      const apiCall = `https://api.hubapi.com/crm/v3/objects/${YOUR_CUSTOM_OBJECT_ID}/?limit=50&archived=false&properties=name,start_date,end_date`;
      const headers = {
