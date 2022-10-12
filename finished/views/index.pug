@@ -22,7 +22,7 @@ html
                 //- Add form here
                 form(method="POST" id="rentEquipment")
                     label(for="chooseEquipment" id="chooseEquipment") Equipment to Rent
-                    select(name="chooseEquipment" id="equipment" form="rentEquipment")
+                    select(name="chooseEquipment" id="equipment" form="rentEquipment" required)
                         option(value="macbook_pro_14") MacBook Pro 14
                         option(value="macbook_pro_16") MacBook Pro 16
                         option(value="canon_rebel_t7") Canon Rebel T7
@@ -32,9 +32,9 @@ html
                         option(value="epson_ex3280_projector") Espon EX3280 Projector
                         option(value="epson_pro_ex9240_projector") Espon Pro EX9240 Projector
                     label(for="chooseStartDate") Rental Period Start
-                    input(type="date" id="chooseStartDate" name="chooseStartDate")
+                    input(type="date" id="chooseStartDate" name="chooseStartDate" required)
                     label(for="chooseEndDate") Rental Period End
-                    input(type="date" id="chooseEndDate" name="chooseEndDate")
+                    input(type="date" id="chooseEndDate" name="chooseEndDate" required)
                     input(type="submit" value="Reserve Your Equipment")
         //- Calling the minified script files
         script(src='/dist/calendar.min.js')
