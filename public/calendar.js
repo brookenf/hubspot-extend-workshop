@@ -15,13 +15,13 @@ import './css/style.css'
  */
 async function createCalendar() {
   //TODO: Wrap everything in a try/catch for error handling.
-
+  
   //TODO: Fetch the data from /get-data
 
   //TODO: Write an if statment to await response status code of 200 'OK'
-
+  
   //TODO: Create calendar instance 
-
+  
   //TODO: Add the individual events to the calendar
 
   //TODO: Add heading above calendar to show month and year

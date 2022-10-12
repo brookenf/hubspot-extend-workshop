@@ -2,7 +2,7 @@
     "name": "New AV Rentals",
     "files": [
         {
-            "fileName": "sample-rentals-2.csv",
+            "fileName": "sample-rentals.csv",
             "fileFormat": "CSV",
             "dateFormat": "YEAR_MONTH_DAY",
             "fileImportPage": {

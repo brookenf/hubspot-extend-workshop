@@ -22825,8 +22825,7 @@ function _createCalendar() {
                 start: rental.properties.start_date,
                 end: rental.properties.end_date
               };
-            }); //* Testing to make sure your array of objects looks correct
-
+            });
             console.log(dataMap);
             calendars = [];
             dataMap.forEach(function (rental) {
@@ -22836,16 +22835,14 @@ function _createCalendar() {
                 backgroundColor: "#".concat(Math.floor(Math.random() * 16777215).toString(16))
               };
               calendars.push(avCalendars);
-            }); //* Testing to make sure your array of objects looks correct
-
-            console.log(calendars); //* Create Calendar instance
-
+            });
+            console.log(calendars);
             calendar = new _toast_ui_calendar__WEBPACK_IMPORTED_MODULE_2__["default"]('#calendar', {
               defaultView: 'month',
               calendars: calendars
-            }); //* Add the individual events to calendar
+            }); //TODO: Add the individual events to the calendar
 
-            calendar.createEvents(dataMap); //* Heading above calendar to show month and year
+            calendar.createEvents(dataMap); //TODO: Add heading above calendar to show month and year
 
             month = calendar.getDate();
             document.getElementById('month-heading').innerHTML = "".concat(new Date(month).toLocaleString('en-us', {
@@ -22859,16 +22856,15 @@ function _createCalendar() {
             throw new Error("Something went wrong: ".concat(resp.statusText));
 
           case 20:
-            _context.next = 26;
+            _context.next = 25;
             break;
 
           case 22:
             _context.prev = 22;
             _context.t0 = _context["catch"](0);
             console.error(_context.t0);
-            console.log('hi');
 
-          case 26:
+          case 25:
           case "end":
             return _context.stop();
         }
