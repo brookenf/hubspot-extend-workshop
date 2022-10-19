@@ -1,5 +1,7 @@
 # HubSpot.Extend() Workshop: Adding CRM to your Skillset - Getting Started with HubSpot's Platform API
 
+**This workshop is part of HubSpot.Extend() 2022, hosted on October 27, 2022. This repository will not be maintained post-workshop day, October 26, 2022.**
+
 Welcome to HubSpot.Extend()'s Workshop Day. Our workshop has three parts:
 1. Setting Up Your Dev Environment
 2. Creating a Custom Object
@@ -30,3 +32,5 @@ Welcome to HubSpot.Extend()'s Workshop Day. Our workshop has three parts:
 1. Make sure all you have npm installed `npm install -g npm`
 2. Teach you how to install node packages using `npm install`
 4. Teach you how to set up your node app
+
+For all terminal commands used in today's workshop, please refer to [this document](https://docs.google.com/document/d/1V9ToaPh4z0FUNrIoGMo-erdhDTuwewDmW0XZvLvnoMw/edit?usp=sharing).
