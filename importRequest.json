@@ -4,7 +4,7 @@
         {
             "fileName": "sample-rentals.csv",
             "fileFormat": "CSV",
-            "dateFormat": "YEAR_MONTH_DAY",
+            "dateFormat": "MONTH_DAY_YEAR",
             "fileImportPage": {
                 "hasHeader": true,
                 "columnMappings": [
